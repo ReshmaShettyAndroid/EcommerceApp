@@ -1,5 +1,7 @@
 package com.example.ecommerceapp.di
 
+import android.app.Application
+import android.content.Context
 import com.example.ecommerceapp.Utils.ApiUrlConstants
 import com.example.ecommerceapp.data.repositoryImpl.RegistrationImpl
 import com.example.ecommerceapp.domain.repository.RegistrationRepository
@@ -42,4 +44,9 @@ object AppModule {
 
     @Provides
     fun provideProductRepository(registrationImpl: RegistrationImpl): RegistrationRepository = registrationImpl
+
+    @Provides
+    fun provideContext(application: Application): Context {
+        return application.applicationContext
+    }
 }

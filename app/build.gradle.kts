@@ -78,7 +78,8 @@ dependencies {
 
     // Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+//    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 
     //retrofit
     implementation ("com.google.code.gson:gson:2.8.6")
@@ -100,6 +101,7 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0")
 
     implementation ("androidx.compose.ui:ui:1.7.8")
+    implementation ("androidx.compose.material:material:1.4.0")
     implementation ("androidx.compose.material3:material3:1.3.1")
 
 
@@ -111,4 +113,15 @@ dependencies {
 
     //populate image from uri library
     implementation("io.coil-kt:coil-compose:2.1.0")
+
+    //Preview
+//    implementation ("androidx.compose.material3:material3:1.0.0") // or latest version
+//    implementation ("androidx.compose.ui:tooling:1.0.5") // for preview and tooling support
+    implementation ("androidx.compose.ui:ui-tooling-preview:1.4.0") // for previews
+
+
+    // ViewPager dependency
+    implementation ("com.google.accompanist:accompanist-pager-indicators:0.13.0")
+    implementation ("com.google.accompanist:accompanist-pager:0.13.0")
+
 }

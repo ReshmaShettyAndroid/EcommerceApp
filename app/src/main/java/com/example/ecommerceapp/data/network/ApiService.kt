@@ -15,5 +15,5 @@ interface ApiService {
 
     @POST(REGISTRATION)
     suspend fun userRegistration(@Body registrationRequest: RegistrationRequest): RegistrationResponse
-}
+ }
 

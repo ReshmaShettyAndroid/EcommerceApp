@@ -1,8 +1,8 @@
 package com.example.ecommerceapp.data.model
 
 data class RegistrationRequest(
-    val name: String,
-    val email: String,
-    val password: String,
+    var name: String,
+    var email: String,
+    var password: String,
     val avatar: String
 )
